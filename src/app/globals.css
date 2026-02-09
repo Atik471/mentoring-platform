@@ -1,17 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --brand-dark: #002418; 
+  --brand-dark: #002418;
 }
 
 .bg-noise {
   background-color: var(--brand-dark);
   background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
-  background-attachment: fixed;
+  background-repeat: repeat;
+  background-attachment: scroll;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  background-color: #002418;
+  min-height: 100vh;
+  background-color: var(--brand-dark);
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-repeat: repeat;
+  background-attachment: scroll;
 }
