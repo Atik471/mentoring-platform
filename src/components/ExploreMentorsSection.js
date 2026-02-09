@@ -46,6 +46,48 @@ export default function ExploreMentorsSection() {
             expertise: ['TypeScript', 'React', 'Performance'],
             rating: 5.0,
             image: '/mentor-1.avif'
+        },
+        {
+            name: 'Sarah Chen',
+            title: 'Senior Software Engineer at Google',
+            expertise: ['React', 'System Design', 'Career Growth'],
+            rating: 5.0,
+            image: '/mentor-1.avif'
+        },
+        {
+            name: 'Michael Roberts',
+            title: 'Engineering Manager at Meta',
+            expertise: ['Leadership', 'Python', 'ML/AI'],
+            rating: 4.9,
+            image: '/mentor-1.avif'
+        },
+        {
+            name: 'Emily Johnson',
+            title: 'Product Designer at Airbnb',
+            expertise: ['UI/UX', 'Figma', 'Design Systems'],
+            rating: 5.0,
+            image: '/mentor-1.avif'
+        },
+        {
+            name: 'David Kim',
+            title: 'Staff Engineer at Netflix',
+            expertise: ['Backend', 'Microservices', 'AWS'],
+            rating: 4.8,
+            image: '/mentor-1.avif'
+        },
+        {
+            name: 'Jessica Martinez',
+            title: 'Data Scientist at Spotify',
+            expertise: ['Data Science', 'Python', 'Analytics'],
+            rating: 4.9,
+            image: '/mentor-1.avif'
+        },
+        {
+            name: 'Alex Thompson',
+            title: 'Frontend Lead at Stripe',
+            expertise: ['TypeScript', 'React', 'Performance'],
+            rating: 5.0,
+            image: '/mentor-1.avif'
         }
     ];
 
@@ -53,9 +95,9 @@ export default function ExploreMentorsSection() {
         <section className="py-20 px-20" style={{ backgroundColor: '#fbeedd' }}>
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
-                <div className="text-center mb-12">
+                <div className="text-center mb-20">
                     <h2
-                        className="text-3xl md:text-4xl mb-8 max-w-[40%] md:max-w-[60%] lg:max-w-[80%] mx-auto"
+                        className="text-3xl md:text-4xl mb-8 max-w-[80%] md:max-w-[60%] lg:max-w-[40%] mx-auto"
                         style={{
                             fontFamily: '"Shippori Mincho", serif',
                             fontWeight: 600,
@@ -67,7 +109,7 @@ export default function ExploreMentorsSection() {
                 </div>
 
                 {/* Search Bar */}
-                <div className="flex justify-center gap-4 mb-14">
+                <div className="flex justify-center gap-4 mb-20">
                     <div className="relative flex-1 max-w-2xl">
                         <input
                             type="text"
@@ -162,15 +204,11 @@ export default function ExploreMentorsSection() {
                 </div>
 
                 {/* View All Button */}
-                <div className="text-center mt-14">
+                <div className="text-center mt-20">
                     <button
-                        className="px-8 py-3 rounded-full text-base font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                        style={{
-                            backgroundColor: '#002418',
-                            color: '#fbeedd'
-                        }}
+                        className="px-6 py-2 rounded-full text-base font-medium transition-all duration-300 border-2 border-blue-500 hover:bg-blue-500 hover:text-white"
                     >
-                        View All Mentors
+                        Explore All Mentors
                         <svg
                             className="inline-block ml-2 w-4 h-4"
                             fill="none"
@@ -185,6 +223,60 @@ export default function ExploreMentorsSection() {
                             />
                         </svg>
                     </button>
+                </div>
+
+                {/* Testimonial Section */}
+                <div className="mt-24 max-w-3xl mx-auto text-center">
+                    {/* Star Rating */}
+                    <div className="flex justify-center gap-1 mb-6">
+                        {[...Array(5)].map((_, index) => (
+                            <svg
+                                key={index}
+                                className="w-6 h-6"
+                                fill="#F59E0B"
+                                viewBox="0 0 20 20"
+                            >
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        ))}
+                    </div>
+
+                    {/* Quote */}
+                    <blockquote
+                        className="text-xl md:text-2xl leading-relaxed mb-8"
+                        style={{ color: '#002418' }}
+                    >
+                        "After years of self-studying with books and courses, I finally joined MentorCruise. After a few sessions, my feelings changed completely. I can clearly see my progress – 100% value for money."
+                    </blockquote>
+
+                    {/* Author */}
+                    <div className="flex items-center justify-center gap-4">
+                        <div className="relative w-14 h-14 rounded-full overflow-hidden">
+                            <Image
+                                src="/mentor-1.avif"
+                                alt="Mauro Bandera"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                        <div className="text-left">
+                            <p
+                                className="text-lg font-semibold"
+                                style={{
+                                    fontFamily: '"Shippori Mincho", serif',
+                                    color: '#002418'
+                                }}
+                            >
+                                Mauro Bandera
+                            </p>
+                            <p
+                                className="text-base"
+                                style={{ color: '#00694a' }}
+                            >
+                                Data Scientist at Printify
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
