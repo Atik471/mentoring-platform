@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from './Button';
+import CategoryNav from './CategoryNav';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -85,6 +86,11 @@ export default function Navbar() {
               )}
             </svg>
           </button>
+        </div>
+
+        {/* Category Navigation - Below main nav */}
+        <div className="hidden md:block py-3">
+          <CategoryNav />
         </div>
 
         {/* Mobile Menu */}
