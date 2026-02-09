@@ -7,6 +7,8 @@ import ExploreMentorsSection from "@/components/ExploreMentorsSection";
 import CTASection from "@/components/CTASection";
 import MentorCarouselSection from "@/components/MentorCarouselSection";
 import OneOffSessionSection from "@/components/OneOffSessionSection";
+import BecomeMentor from "@/components/BecomeMentor";
+import DetailedTestimonials from "@/components/DetailedTestimonials";
 
 export default function Home() {
   return (
@@ -19,8 +21,9 @@ export default function Home() {
       <ExploreMentorsSection />
       <CTASection />
       <MentorCarouselSection />
-      <TestimonialSection />
+      <BecomeMentor />
       <OneOffSessionSection />
+      <DetailedTestimonials />
     </div>
   );
 }
