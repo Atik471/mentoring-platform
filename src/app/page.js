@@ -5,6 +5,7 @@ import StatsSection from "@/components/StatsSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import ExploreMentorsSection from "@/components/ExploreMentorsSection";
 import CTASection from "@/components/CTASection";
+import MentorCarouselSection from "@/components/MentorCarouselSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
       <FeaturesSection />
       <ExploreMentorsSection />
       <CTASection />
+      <MentorCarouselSection />
+      <TestimonialSection />
     </div>
   );
 }

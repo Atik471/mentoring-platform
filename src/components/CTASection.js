@@ -6,9 +6,9 @@ import Button from './Button';
 export default function CTASection() {
     return (
         <section
-            className="py-20 px-4 md:px-20"
+            className="py-20 px-4 md:px-20 mb-30"
             style={{
-                background: 'linear-gradient(180deg, #fbeedd 0%, #a8c5b8 15%, #4a7c6f 40%, #2d5a50 60%, #1a3d35 80%, #0f2922 100%)'
+                background: 'linear-gradient(180deg, #fbeedd 0%, #a8c5b8 15%, #4a7c6f 40%, #2d5a50 60%, #1a3d35 80%, #012419 100%)',
             }}
         >
             <div className="max-w-6xl mx-auto">
