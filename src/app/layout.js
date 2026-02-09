@@ -1,6 +1,7 @@
 import { Shippori_Mincho } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const shipporiMincho = Shippori_Mincho({
   weight: "600",
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

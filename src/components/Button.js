@@ -20,7 +20,7 @@ export default function Button({
     const sizes = {
         sm: 'px-4 py-2 text-sm',
         md: 'px-6 py-3 text-base',
-        lg: 'px-8 py-3 text-lg',
+        lg: 'px-8 py-3 text-base',
     };
 
     const buttonClasses = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
