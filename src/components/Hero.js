@@ -61,7 +61,7 @@ export default function Hero() {
         <section className="relative bg-transparent py-20 px-4" style={{ color: '#fbeedd' }}>
             <div className="max-w-4xl mx-auto text-center">
                 {/* Heading */}
-                <h1 className="text-5xl md:text-6xl font-semibold mb-4" style={{ fontFamily: '"Shippori Mincho", serif', fontWeight: 600 }}>
+                <h1 className="text-5xl md:text-6xl leading-18 font-semibold mb-4" style={{ fontFamily: '"Shippori Mincho", serif', fontWeight: 600 }}>
                     1-on-1 Mentorship in<br />
                     <span style={{ color: '#6ed9c0' }}>
                         {typedText}
